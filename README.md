@@ -12,3 +12,6 @@ Denote the parameters of the optimizee as $\theta$, that of the optimizer as $\p
 3. The gradient $\frac{\partial \ell}{\partial \theta}$ is passed into the L2O optimizer, which outputs a step size to update the optimizee.
 4. Steps 1 to 3 are repeated for $n$ iterations, which produces an accumulated loss $\mathcal{L}$.
 5. Gradients $\frac{\partial \mathcal{C}}{\partial \phi}$ are calculated and used to update $\phi$ using traditional gradient descent.
+
+## Implementation
+We will train a regression model using the Boston Housing Prices dataset.
