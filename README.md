@@ -14,4 +14,9 @@ Denote the parameters of the optimizee as $\theta$, that of the optimizer as $\p
 5. Gradients $\frac{\partial \mathcal{C}}{\partial \phi}$ are calculated and used to update $\phi$ using traditional gradient descent.
 
 ## Implementation
-We will train a regression model using the Boston Housing Prices dataset.
+We will implement L2O step by step:
+
+1. Regression without L2O
+2. Simple Regression on generated data using a gradient learning rate learnt by L2O
+3. Learning rate L2O training on a Neural Network model
+4. LSTM L2O Model training Neural Network and other classification problems
