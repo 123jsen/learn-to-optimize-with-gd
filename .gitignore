@@ -137,3 +137,6 @@ dmypy.json
 
 # Testing
 test.ipynb
+
+# Training Data
+/data
