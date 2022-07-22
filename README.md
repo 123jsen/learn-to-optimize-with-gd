@@ -19,4 +19,4 @@ We will implement L2O step by step:
 1. Regression without L2O
 2. Simple Regression on generated data using a gradient learning rate learnt by L2O
 3. Learning rate L2O training on a Neural Network model
-4. LSTM L2O Model training Neural Network and other classification problems
+4. LSTM L2O Model training Neural Network and other classification problems. The LSTM model is applied pointwise to every parameter value (not tensor, parameter).
