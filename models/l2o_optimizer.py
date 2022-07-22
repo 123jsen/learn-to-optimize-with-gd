@@ -15,7 +15,7 @@ class gd_l2o_weight(nn.Module):
 class lstm_l2o_optimizer(nn.Module):
     def __init__(self):
         super(lstm_l2o_optimizer, self).__init__()
-        self.LSTM = nn.LSTM(1, 24, num_layers=2)    # gradient is the sole input
+        self.LSTM = nn.LSTM(1, 24)    # gradient is the sole input
         self.linear = nn.Linear(24, 1)
     
     def forward(self, x, h_in):
