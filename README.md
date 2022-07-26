@@ -20,3 +20,21 @@ We will implement L2O step by step:
 2. Simple Regression on generated data using a gradient learning rate learnt by L2O
 3. Learning rate L2O training on a Neural Network model
 4. LSTM L2O Model training Neural Network and other classification problems. The LSTM model is applied pointwise to every parameter value (not tensor, parameter).
+
+## Pseudocode for LSTM meta-training
+
+    While (count < num_optimizee):
+        Generate Hidden State
+        Initialize Array of Optimizees
+        While (epoch < num_epoch):
+            While (batch is not end):
+                Feedforward Next Batch through Optimizee
+                if (iter == unroll_length):
+                    Backpropagation on Optimizer
+                    Reset Computational Graph
+                    Reset Total Loss
+                else:
+                    Backpropagation on Optimizee
+
+
+See "Training Stronger Baselines for Learning to Optimize" by Chen et al. for more.
