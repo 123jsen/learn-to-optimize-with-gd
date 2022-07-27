@@ -20,4 +20,4 @@ class lstm_l2o_optimizer(nn.Module):
     
     def forward(self, x, h_in):
         out, h_out = self.LSTM(x, h_in)
-        return self.linear(out), h_out
+        return x * self.linear(out), h_out

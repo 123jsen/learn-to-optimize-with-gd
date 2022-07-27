@@ -136,7 +136,7 @@ dmypy.json
 /trained_model
 
 # Testing
-test.ipynb
+test*.ipynb
 
 # Training Data
 /data
